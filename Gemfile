@@ -14,6 +14,7 @@ gem 'uglifier', '>= 1.3.0'
 
 #New gem
 gem "figaro"
+gem 'devise', '~> 4.4'
 
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
