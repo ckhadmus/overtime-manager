@@ -3,7 +3,7 @@ user = User.create(first_name: "Carlos", last_name: "Orellana", email: "carlos@t
 puts "1 User has been created"
 
 100.times do |post|
-  Post.create!(date: Date.today, rationale: "#{post} Lorem Ipsum Dolor", user_id: user.id)
+  Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: user.id)
 end
 
 puts "100 posts has been created"
