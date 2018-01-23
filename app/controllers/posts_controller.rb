@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-before_action :set_post, only: [:show, :edit]
+before_action :set_post, only: [:show, :edit, :update]
   def index
     @posts = Post.all
   end
@@ -9,6 +9,9 @@ before_action :set_post, only: [:show, :edit]
 
   def new
     @post = Post.new
+  end
+
+  def edit
   end
 
   def create
@@ -23,6 +26,14 @@ before_action :set_post, only: [:show, :edit]
         format.html { render :new }
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
+    end
+  end
+
+  def update
+    if @post.update(post_params)
+      redirect_to @post, notice: "Your post was edited successfully"
+    else
+      render :edit
     end
   end
 

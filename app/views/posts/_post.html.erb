@@ -2,3 +2,6 @@
 <%= post.date %>
 <%= post.user.full_name %>
 <%= truncate(post.rationale) %>
+<%= link_to 'Edit', edit_post_path(post), id: "edit_#{post.id}"%>
+
+<%= link_to 'New Post', new_post_path %>
