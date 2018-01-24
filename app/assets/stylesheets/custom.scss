@@ -9,7 +9,7 @@ body, html{
     background-color: white !important;
 }
 
-.h2-styles{
+.h1-styles, .h2-styles{
   color: #2b2b2bc7;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
@@ -17,14 +17,38 @@ body, html{
   font-size: 1.6rem;
 }
 
+.h1-styles{
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.general-form-container{
+  background: #EAE4DA;
+  align-items: center;
+  display: flex;
+  height:100vh;
+  margin:0;
+  justify-content: center;
+
+  label, a{
+    color: #2b2b2bc7;
+  }
+}
+
 .container-login-form{
   align-items: center;
-  background-color: rgba(64,64,64,.5);
+  background-color: #08b1d8;
   display: flex;
   height:100vh;
   margin:0;
   justify-content: center;
   padding:0;
+}
+
+.general-form-styles{
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 30px;
 }
 
 .form-login{
@@ -38,8 +62,17 @@ body, html{
   }
 }
 
-.custom-input-text{
+.custom-input-text-general{
   border-radius: 0;
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  &:focus{
+    box-shadow: none;
+    border-color: #dddddd;
+  }
+}
+
+.custom-input-text-login{
   border: none;
   border-bottom: 1px solid #dddddd;
   box-shadow: none;
@@ -56,7 +89,7 @@ body, html{
 }
 
 .login-button{
-  background-color: #2b2b2bc7;
+  background-color: #2b2b2b;
   border-color: #fff;
   border-radius: 0;
   height: 45px;
@@ -65,6 +98,6 @@ body, html{
   &:hover, &:active, &:focus{
     color: #fff;
     border-color: #fff;
-    background-color: #2b2b2b !important;
+    background-color: #00A5AC !important;
   }
 }

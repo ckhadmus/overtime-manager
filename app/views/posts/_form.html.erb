@@ -1,27 +1,32 @@
-<%= form_with(model: post, local: true) do |form| %>
-  <% if post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+<section class="container-fluid general-form-container">
+  <section class="post-form-container col-md-4 col-md-offset-4">
+    <h1 class="h1-styles">Create New Overtime Request</h1>
+    <%= form_with(model: post, local: true, class: 'general-form-styles') do |form| %>
+      <% if post.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
-      <ul>
-      <% post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+          <ul>
+          <% post.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.date_field :date, id: :post_date %>
-  </div>
+      <div class="form-group">
+        <%= form.label :date %>
+        <%= form.date_field :date, id: :post_date, class: 'form-control custom-input-text-general' %>
+      </div>
 
-  <div class="field">
-    <%= form.label :rationale %>
-    <%= form.text_area :rationale, id: :post_rationale %>
-  </div>
+      <div class="form-group">
+        <%= form.label :rationale %>
+        <%= form.text_area :rationale, id: :post_rationale, class: 'form-control custom-input-text-general' %>
+      </div>
 
-  <div class="actions">
-    <%= form.submit "Save" %>
-  </div>
-<% end %>
+      <div class="form-group">
+        <%= form.submit "Save", class: 'btn btn-primary login-button' %>
+      </div>
+    <% end %>
+  </section>
+</section>
