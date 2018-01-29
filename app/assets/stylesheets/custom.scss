@@ -35,7 +35,7 @@ body, html{
   }
 }
 
-.container-login-form{
+.container-login-form, .container-no-hv{
   align-items: center;
   background-color: #08b1d8;
   display: flex;
@@ -45,9 +45,21 @@ body, html{
   padding:0;
 }
 
+.container-no-hv{
+  height: auto;
+}
+
 .general-form-styles{
   background: #FFFFFF;
   border-radius: 4px;
+  padding: 30px;
+}
+
+.form-edit-user-information{
+  background: #FFF;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  margin-top: 50px;
   padding: 30px;
 }
 
@@ -100,4 +112,8 @@ body, html{
     border-color: #fff;
     background-color: #00A5AC !important;
   }
+}
+
+.red-button{
+  background-color: #981414;
 }
