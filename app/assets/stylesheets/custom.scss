@@ -22,6 +22,24 @@ body, html{
   margin-bottom: 20px;
 }
 
+.notice_wrapper, .alert_wrapper, .alert_error_wrapper{
+  background-color: #FFFFFF;
+  border: 1px solid #2b2b2b;
+  color: #2b2b2b;
+  font-weight: 400;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  top: 80px;
+  width: 16%;
+  z-index: 999;
+  padding: 10px;
+
+  p{
+    margin: 0;
+  }
+}
+
 .general-form-container{
   background: #EAE4DA;
   align-items: center;
