@@ -12,6 +12,16 @@
   </head>
 
   <body>
+    <% if notice %>
+      <div class="notice_wrapper">
+        <p class="notice"><%= notice %></p>
+      </div>
+    <% elsif alert %>
+      <div class="alert_wrapper">
+        <p class="notice"><%= alert %></p>
+      </div>
+    <% end %>
+
     <%= render 'shared/navigation' %>
     <%= yield %>
   </body>
