@@ -22,12 +22,16 @@ body, html{
   margin-bottom: 20px;
 }
 
-.notice_wrapper, .alert_wrapper, .alert_error_wrapper{
+.h2-errors{
+  font-size: 1rem;
+}
+
+.notice_wrapper, .alert_wrapper, .alert_error_wrapper, .validate-errors-alert{
   background-color: #FFFFFF;
   border: 1px solid #2b2b2b;
   color: #2b2b2b;
   font-weight: 400;
-  right: 0;
+  right: 10px;
   position: absolute;
   text-align: center;
   top: 80px;
@@ -37,6 +41,16 @@ body, html{
 
   p{
     margin: 0;
+  }
+}
+
+.validate-errors-alert{
+  border-radius: 3px;
+  right: 10px;
+  width: 20%;
+
+  p{
+    color: #fb0000;
   }
 }
 
