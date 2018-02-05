@@ -17,6 +17,7 @@ gem "figaro"
 gem 'devise', '~> 4.4'
 gem 'bootstrap', '~> 4.0.0'
 gem 'administrate', '~> 0.8.1'
+gem 'administrate-field-password'
 
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
