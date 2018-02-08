@@ -21,6 +21,8 @@
         <%= form.text_area :rationale, id: :post_rationale, class: 'form-control custom-input-text-general' %>
       </div>
 
+      <%= render partial: 'status', locals: { form: form } if current_user.type == 'AdminUser' %>
+
       <div class="form-group">
         <%= form.submit "Save", class: 'btn btn-primary login-button' %>
       </div>
